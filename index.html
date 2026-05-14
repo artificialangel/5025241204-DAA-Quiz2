@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-layout">
+    <section class="maze-card" aria-label="Maze grid">
+      <div id="mazeGrid" class="maze-grid"></div>
+    </section>
+
+    <aside class="control-card">
+      <div class="control-content">
+        <h1>MAZE GAME</h1>
+        <p>Using Breadth First Search</p>
+
+        <div class="tool-row" aria-label="Maze tools">
+          <button id="drawBtn" class="tool-btn active" title="Draw walls" aria-label="Draw walls">
+            <img src="assets/icons/draw.png" alt="" />
+          </button>
+          <button id="eraseBtn" class="tool-btn" title="Erase" aria-label="Erase">
+            <img src="assets/icons/erase.png" alt="" />
+          </button>
+          <button id="clearBtn" class="tool-btn" title="Clear all" aria-label="Clear all">
+            <img src="assets/icons/clearall.png" alt="" />
+          </button>
+          <button id="startCellBtn" class="tool-btn green" title="Place start" aria-label="Place start">
+            <img src="assets/icons/start.png" alt="" />
+          </button>
+          <button id="finishCellBtn" class="tool-btn red" title="Place finish" aria-label="Place finish">
+            <img src="assets/icons/finish.png" alt="" />
+          </button>
+        </div>
+
+        <button id="solveBtn" class="solve-btn">Start</button>
+        <div id="status" class="status" aria-live="polite"></div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
